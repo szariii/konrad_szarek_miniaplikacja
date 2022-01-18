@@ -1,0 +1,1 @@
+# konrad_szarek_miniaplikacja
