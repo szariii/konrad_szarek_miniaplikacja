@@ -8,7 +8,8 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.2",
-    "express-handlebars": "^5.3.5"
+    "express-handlebars": "^5.3.5",
+    "serve": "^13.0.2"
   },
   "devDependencies": {},
   "scripts": {
