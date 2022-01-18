@@ -1,0 +1,26 @@
+<nav>
+    <ul>
+        <li><a href="/">main</a></li>
+        <li><a href="/register">register</a></li>
+        <li><a href="/login">login</a></li>
+        <li><a href="/admin">admin</a></li>
+        <li><a href="/logout">{{logout}}</a></li>
+    </ul>
+</nav>
+
+<div id="main">
+    <h1>Login page</h1>
+    <div id="form">
+        <form id="logowanie" method="POST" action="/logowanie">
+            <label>
+                <p>login:<input type="text" class="input" name="login" id="login"></p>
+            </label>
+            <label>
+                <p>password:<input type="text" class="input" name="pass" id="password"></p>
+            </label>
+            <br /><br />
+            <div class="btn"><button class="btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

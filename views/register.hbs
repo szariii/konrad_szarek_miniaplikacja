@@ -1,0 +1,40 @@
+<nav>
+    <ul>
+        <li><a href="/">main</a></li>
+        <li><a href="/register">register</a></li>
+        <li><a href="/login">login</a></li>
+        <li><a href="/admin">admin</a></li>
+        <li><a href="/logout">{{logout}}</a></li>
+    </ul>
+</nav>
+<div id="main">
+    <h1>Register page</h1>
+    <div id="form">
+        <form id="rejsetracja" method="POST" action="/rejestracja">
+            <label>
+                <p>login:<input type="text" class="input" name="login" id="login"></p>
+            </label>
+            <label>
+                <p>password:<input type="text" class="input" name="pass" id="password"></p>
+            </label>
+            <label>
+                <p>Wiek:<select name="wiek" class="input" id="wiek" required>
+                        {{#each dane}}
+                        <option value="{{i}}">{{i}}</option>
+                        {{/each}}
+                    </select></p>
+            </label>
+            <label>
+                <p>Uczeń?:<input class="inputr" type="checkbox" name="uczen" value="checked"></p>
+            </label>
+            <label>
+
+                Płeć:
+                <div class="inputr"><input class="inpu" type="radio" name="plec" value="k"><label>K</label><label><input
+                            class="inpu" type="radio" name="plec" value="m"><label>M</label></div>
+
+            </label><br /><br />
+            <div class="btn"><button class="btn" type="submit">Submit</button></div>
+        </form>
+    </div>
+</div>

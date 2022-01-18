@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li{
+    display: inline; 
+    margin-left:2;
+}
+
+a{
+    color: white;
+    margin: 5px;
+}
+
+nav{
+    width: 100vw;
+    background-color: blue;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+.input{
+float: right;
+margin-left: 20px;
+width: 169px;
+padding: 1px 2px;
+}
+
+.inputr{
+    float: right;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.teskcik{
+    width: 100px;
+}
+
+.btn{
+    width: 200px;
+}
+
+.niezalogowany{
+    background-color: rgb(129, 8, 93);
+}
+
+.adminpanel{
+    background-color: yellow;
+}
+
+#wewnetrzny{
+    color: black;
+}
+
+#body{
+    background-color: yellow;
+    height: 100vh;
+}
+
+.bodyv1{
+    margin-left: 20px;
+}
+
+td{
+    border: 2px solid black;
+
+}
+
+.table{
+    margin-left: 20px;
+}
+
+.sortpierwsza{
+    width: 100px;
+}
+
+.sortdruga{
+    width: 400px ;
+}
+.sorttrzecia{
+    width: 150px;
+}
+
+.klewa{
+    width: 200px;
+}
+
+.kprawa{
+    width: 300px;
+}
+
+.mlewa{
+    width: 100px;
+}
+
+.mprawa{
+    width: 400px;
+}
+
+.pierwsza{
+    width: 70px;
+}
+
+.druga{
+width: 300px;
+}
+
+.trzecia{
+width: 200px;
+}
+
+.czwarta{
+width: 200px;
+}
+
+.piat{
+width: 300px;
+}

@@ -1,0 +1,33 @@
+<nav>
+    <ul>
+        <li><a href="/">main</a></li>
+        <li><a href="/register">register</a></li>
+        <li><a href="/login">login</a></li>
+        <li><a href="/admin">admin</a></li>
+        <li><a href="/logout">{{logout}}</a></li>
+    </ul>
+</nav>
+<nav class="adminpanel">
+    <ul>
+        <li><a id="wewnetrzny" href="/sort">sort</a></li>
+        <li><a id="wewnetrzny" href="/gender">gender</a></li>
+        <li><a id="wewnetrzny" href="/show">show</a></li>
+    </ul>
+</nav>
+<div id="body">
+    <div class="bodyv1">
+        <form onchange="this.submit()">
+            <label><input type="radio" name="sortowanie" value="up">rosnące</label><label><input type="radio"
+                    name="sortowanie" value="down">malejące</label>
+        </form>
+        <table>
+            {{#each dane}}
+            <tr>
+                <td class="sortpierwsza">id: {{id}} </td>
+                <td class="sortdruga">user: {{login}} - {{pass}} </td>
+                <td class="sorttrzecia">wiek: {{wiek}} </td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>

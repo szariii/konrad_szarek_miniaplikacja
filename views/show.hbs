@@ -1,0 +1,30 @@
+<nav>
+    <ul>
+        <li><a href="/">main</a></li>
+        <li><a href="/register">register</a></li>
+        <li><a href="/login">login</a></li>
+        <li><a href="/admin">admin</a></li>
+        <li><a href="/logout">{{logout}}</a></li>
+    </ul>
+</nav>
+<nav class="adminpanel">
+    <ul>
+        <li><a id="wewnetrzny" href="/sort">sort</a></li>
+        <li><a id="wewnetrzny" href="/gender">gender</a></li>
+        <li><a id="wewnetrzny" href="/show">show</a></li>
+    </ul>
+</nav>
+
+<body id="body">
+    <table class="table">
+        {{#each dane}}
+        <tr>
+            <td class="pierwsza">id: {{id}} </td>
+            <td class="druga">user: {{login}} - {{pass}} </td>
+            <td class="trzecia">uczeń: <input type="checkbox" disabled="disabled" {{uczen}}> </td>
+            <td class="czwarta">wiek: {{wiek}} </td>
+            <td class="piat">płeć: {{plec}} </td>
+        </tr>
+        {{/each}}
+    </table>
+</body>

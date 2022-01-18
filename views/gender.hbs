@@ -1,0 +1,35 @@
+<nav>
+    <ul>
+        <li><a href="/">main</a></li>
+        <li><a href="/register">register</a></li>
+        <li><a href="/login">login</a></li>
+        <li><a href="/admin">admin</a></li>
+        <li><a href="/logout">{{logout}}</a></li>
+    </ul>
+</nav>
+<nav class="adminpanel">
+    <ul>
+        <li><a id="wewnetrzny" href="/sort">sort</a></li>
+        <li><a id="wewnetrzny" href="/gender">gender</a></li>
+        <li><a id="wewnetrzny" href="/show">show</a></li>
+    </ul>
+</nav>
+<div id="body">
+    <table class="table">
+        {{#each kobiety}}
+        <tr>
+            <td class="klewa">id: {{id}} </td>
+            <td class="kprawa">płeć: {{plec}} </td>
+        </tr>
+        {{/each}}
+    </table>
+    <br />
+    <table class="table">
+        {{#each inni}}
+        <tr>
+            <td class="mlewa">id: {{id}} </td>
+            <td class="mprawa">płeć: {{plec}} </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
