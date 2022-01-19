@@ -177,6 +177,6 @@ app.set('views', path.join(__dirname, 'views'));         // ustalamy katalog vie
 app.engine('hbs', hbs({ defaultLayout: 'main.hbs' }));   // domyślny layout, potem można go zmienić
 app.set('view engine', 'hbs');
 
-app.listen(PORT, function () {
+app.listen(process.env.PORT || PORT, function () {
     console.log("start serwera na porcie " + PORT)
 })
