@@ -15,7 +15,7 @@ var tab = [
     { id: 3, login: "CCC", pass: "PASS3", wiek: 30, uczen: "checked", plec: "m" }
 ]
 
-var id = 5
+var id = 4
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
