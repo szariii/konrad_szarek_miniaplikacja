@@ -49,12 +49,12 @@ app.post("/rejestracja", function (req, res) {
     if (flag == true) {
         context.logout = "logout"
     }
-    console.log(req.body)
+    //console.log(req.body)
     let dane = req.body
     dane.id = id
     id = id + 1
     tab.push(dane)
-    console.log(tab)
+    //console.log(tab)
     res.redirect("/login")
 })
 
@@ -74,7 +74,7 @@ app.post("/logowanie", function (req, res) {
     //console.log(req.body)
     loginy = []
     for (let i = 0; i < tab.length; i++) {
-        console.log(tab[i].log)
+        //console.log(tab[i].log)
         if (tab[i].login == req.body.login) {
             loginy.push(i)
         }
@@ -87,7 +87,7 @@ app.post("/logowanie", function (req, res) {
         }
     }
     if (flag == false) {
-        res.redirect("/logowanie")
+        res.redirect("/login")
     }
 })
 
@@ -117,7 +117,7 @@ app.get("/sort", function (req, res) {
         context.logout = "logout"
     }
 
-    console.log(req.query.sortowanie)
+    //console.log(req.query.sortowanie)
 
     if (req.query.sortowanie == "up") {
         tab.sort(function (a, b) {
